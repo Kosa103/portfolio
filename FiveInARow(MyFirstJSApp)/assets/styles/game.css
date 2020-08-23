@@ -1,0 +1,194 @@
+@keyframes blink {
+    50% {
+        color: #cc0000;
+        background-color: #ffb366;
+        border-color: #cc0000;
+    }
+}
+
+@-webkit-keyframes blink {
+    50% {
+        color: #cc0000;
+        background-color: #ffb366;
+        border-color: #cc0000;
+    }
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url("../../images/background01.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+hr {
+    border: 3px solid #ffb366;
+    border-radius: 2px;
+}
+
+h2 {
+    color: #4d0000;
+    background-color: #ffb366;
+    border: 1px solid #4d0000;
+    border-radius: 5px;
+    font-size: 2.3rem;
+    padding: 1rem;
+    margin: -0.2rem auto 1rem auto;
+}
+
+h3 {
+    display: inline;
+    color: #ffb366;
+}
+
+.box {
+    float: left;
+    width: 48%;
+    padding: 0;
+}
+
+.symbolBoard {
+    height: 40px;
+    width: 40px;
+    background-color: #ffb366;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 0 -1px -5px;
+}
+
+.symbolImage {
+    margin: 0 0 -4px 0;
+}
+
+#controls {
+    height: 100px;
+}
+
+#player1-name {
+    font-size: 2rem;
+    color: #3333ff;
+}
+
+#player2-name {
+    font-size: 2rem;
+    color: #ff3333;
+}
+
+#p1-box {
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: 2px solid #ffb366;
+}
+
+#p2-box {
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: 2px solid #ffb366;
+}
+
+
+#board div {
+    height: 40px;
+    width: 40px;
+    background-color: #ffb366;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 0 -1px -6px;
+}
+
+#board div img {
+    margin: 0 0 -4px 0;
+}
+
+#new-game {
+    display: none;
+    font-size: 2rem;
+    color: #ffb366;
+    background-color: #cc0000;
+    border: 1px solid #ffb366;
+    border-radius: 4px;
+    padding: 0.75rem 2rem;
+    margin: 0.5rem 0 1.5rem;
+
+    animation: blink 1s step-start 0s infinite;
+    -webkit-animation: blink 1s step-start 0s infinite;
+}
+
+#new-game:focus {}
+
+#new-game:hover,
+#new-game:active{
+    background-color: darkred;
+    border-color: #ffb366;
+}
+
+
+#p1-resign,
+#p2-resign {
+    font-size: 1rem;
+    color: #ffb366;
+    background-color: #cc0000;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1.1rem;
+    margin: 0 0 0 1.8rem;
+}
+
+#p1-resign:focus,
+#p2-resign:focus{}
+
+#p1-resign:hover,
+#p2-resign:hover,
+#p1-resign:active,
+#p2-resign:active{
+    background-color: darkred;
+}
+
+#main-content {
+    margin: auto;
+    text-align: center;
+    width: 65rem;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 0px 40px white;
+}
+
+#panel,
+#board-section {
+    margin: 2rem auto;
+    width: 60rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    background: #4d0000;
+}
+
+#board-section {
+    margin: 2rem auto 0;
+    height: 50rem;
+}
+
+#board {
+    background-color: #ffb366;
+    margin: auto;
+    width: 798px;
+    height: 798px;
+    text-align: center;
+    box-shadow: 0 2px 8px black;
+    padding: 0;
+}
+
+#board-blocker {
+    display: none;
+    background-color: transparent;
+    position: absolute;
+    width: 798px;
+    height: 798px;
+    z-index: 1;
+}

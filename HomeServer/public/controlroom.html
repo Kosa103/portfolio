@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-language" content="hu-hu">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Borz-alom</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles/page.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js" defer></script> <!-- include socket.io client side script -->
+    <script src="assets/scripts/socket.js" defer></script>
+</head>
+<body id="controlroom-body" style="background-image:url('assets/images/controlRoom.jpg');">
+    <div class="header-div">
+        <ul>
+            <li><a href="index.html">FŐOLDAL</a></li>
+            <li><a class="active" href="controlroom.html">VEZÉRLŐ</a></li>
+            <li><a href="#">GALÉRIA</a></li>
+            <li><a href="extra.html">EXTRÁK</a></li>
+            <li style="float:right;"><a href="#">BEJELENTKEZÉS</a></li>
+        </ul>
+    </div>
+    <div class="control-box">
+        <div class="box-title">
+            <h3>NAPPALI</h3>
+        </div>
+        <div class="control-unit">
+            <div class="control-subbox">
+                <h4>VILLANY</h4>
+            </div>
+            <div class="control-subbox">
+                <label class="container">
+                    <input type="checkbox" id="light">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="control-subbox">
+                <h4 style="visibility: hidden;">.</h4>
+            </div>
+            
+            <div class="control-subbox">
+                <h4>HŐMÉRSÉKLET</h4>
+            </div>
+            <div class="control-subbox">
+                <h4 id="temperature-indoors">(BETÖLTÉS)</h4>
+            </div>
+            
+            <div class="control-subbox">
+                <h4>PÁRATARTALOM</h4>
+            </div>
+            <div class="control-subbox">
+                <h4 id="humidity-indoors">(BETÖLTÉS)</h4>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="control-box">
+        <div class="box-title">
+            <h3>KÜLTÉR</h3>
+        </div>
+        <div class="control-unit">
+            <!--<div class="control-subbox">
+                <h4>HŐMÉRSÉKLET</h4>
+            </div>
+            <div class="control-subbox">
+                <h4 id="temperature-outdoors">(BETÖLTÉS)</h4>
+            </div>
+            
+            <div class="control-subbox">
+                <h4>PÁRATARTALOM</h4>
+            </div>
+            <div class="control-subbox">
+                <h4 id="humidity-outdoors">(BETÖLTÉS)</h4>
+            </div>   -->
+            <div class="control-subbox">
+                <h4>LÉGNYOMÁS</h4>
+            </div>
+            <div class="control-subbox">
+                <h4 id="pressure-outdoors">(BETÖLTÉS)</h4>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
