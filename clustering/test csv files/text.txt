@@ -1,0 +1,9 @@
+Height,Width,Name,Length
+1,1,John,2
+1,2,Carl,4
+2,1,Elisa,2
+2,2,Kate,9
+11,12,Dylan,10
+11,11,Mark,4
+12,12,David,3
+12,11,Helga,5
